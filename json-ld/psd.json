@@ -29,6 +29,18 @@
     "value": "doi:...",
     "url": "https://doi.org/..."
   },
+  "provider": {
+    "@id": "https://www.iris.edu/",
+    "@type": "Organization",
+    "legalName": "Seismological Facility for the Advancement of Geoscience",
+    "name": "SAGE",
+    "sameAs": "https://ror.org/057py8t43",
+    "url": "https://www.iris.edu/",
+    "identifier": "?"
+  },
+  "publisher": {
+    "@id": "https://www.iris.edu/"
+  },
   "license": [
     "https://spdx.org/licenses/CC-BY-4.0",
     "https://creativecommons.org/licenses/by/4.0/"
