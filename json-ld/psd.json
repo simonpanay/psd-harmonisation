@@ -26,7 +26,7 @@
     "value": "doi:...",
     "url": "https://doi.org/..."
   },
-  "license": ["https://creativecommons.org/licenses/by/4.0/"],
+  "license": ["https://creativecommons.org/licenses/by/4.0/", "ANother Licence ?"],
   "variableMeasured": [
     {
       "@type": "PropertyValue",
@@ -56,12 +56,37 @@
   "subjectOf": {
     "@type": "DataDownload",
     "name": "something metadata for dataset",
-    "description": "Not sure we should include this subjectOf section",
-    "encodingFormat": [
-      "application/xml",
-      "https://eml.ecoinformatics.org/eml-2.2.0"
-    ],
+    "description": "Not sure we should include this subjectOf section. should describe the format of that output format",
+    "encodingFormat": ["application/ld+json", "something else ?"],
     "contentURL": "https://",
     "dateModified": "2019-06-12T14:44:15Z"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "contentType": "application/ld+json",
+      "urlTemplate": "https://service.earthscope.org/fdsnws/psd/psd?nslc={nslc}&requested_start={start}&...}",
+      "description": "Download PSDs based start/end dates and nslc's, etc...",
+      "httpMethod": "GET"
+    },
+    "query-input": [
+      {
+        "@type": "PropertyValueSpecification",
+        "valueName": "start",
+        "description": "User requested start time as UTC ISO DateTime",
+        "valueRequired": true,
+        "defaultValue": "2025-05-05T15:55:15Z",
+        "valuePattern": "(-?(?:[1-9][0-9]*)?[0-9]{4})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9])T(2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9])(.[0-9]+)?(Z)?"
+      },
+      {
+        "@type": "PropertyValueSpecification",
+        "valueName": "end",
+        "description": "User requested end time as UTC ISO DateTime",
+        "valueRequired": true,
+        "defaultValue": "2025-05-06T15:55:15Z",
+        "valuePattern": "(-?(?:[1-9][0-9]*)?[0-9]{4})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9])T(2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9])(.[0-9]+)?(Z)?"
+      }
+    ]
   }
 }
