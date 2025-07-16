@@ -1,0 +1,12 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "Power Spectral Density Values",
+  "description": "Output values from a standardized FDSN PSD web service",
+  "url": "https://service.earthscope.org/fdsnws/psd/psd?...",
+  "version": "2025-05-22T10:09:00Z",
+  "isAccessibleForFree": true,
+  "keywords": ["seismology", "power spectral density", "add other keywords"],
+  "identifier": ["?"],
+  "license": ["https://creativecommons.org/licenses/by/4.0/"]
+}
