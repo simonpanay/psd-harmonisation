@@ -1,0 +1,60 @@
+{
+  "uri": "https://service.earthscope.org/fdsnws/psd/pdf?...",
+  "requested_start": "2025-01-01T00:00:00Z",
+  "requested_end": "2025-01-07T00:00:00Z",
+  "analyzed_start": "2025-01-01T00:00:00Z",
+  "analyzed_end": "2025-01-06T00:00:00Z",
+  "created": "2025-05-22T10:09:00Z",
+  "publisher": {
+    "name": "Seismological Facility for the Advancement of Geoscience",
+    "scheme_uri": "https://ror.org",
+    "publisher_identifier": "https://ror.org/04danrt76",
+    "publisher_identifier_scheme": "ROR"
+  },
+  "network DOIs": "general data DOI or PSD DOI?",
+  "algorithm": {
+    "name": "mustang",
+    "url": "some doi",
+    "version": 1.0
+  },
+  "parameters": {
+    "power_description": "10log10(m**2/sec**4/Hz)",
+    "power_units": "dB",
+    "output_description": "frequency",
+    "output_units": "HZ"
+  },
+  "data": {
+    "rights_list": [
+      {
+        "rights": "Creative Commons Attribution 4.0 International",
+        "rights_uri": "https://creativecommons.org/licenses/by/4.0/",
+        "scheme_uri": "https://spdx.org/licenses/",
+        "rights_identifier": "CC-BY-4.0",
+        "rights_identifier_scheme": "SPDX"
+      }
+    ],
+    "sources": [
+      {
+        "fdsn_sid": "IU_ANMO_00_B_H_Z",
+        "network_code": "IU",
+        "station_code": "ANMO",
+        "location_code": "00",
+        "channel_code": "B_H_Z",
+        "sample_rate": 40
+      },
+      {
+        "fdsn_sid": "IU_ANMO_10_B_H_Z",
+        "network_code": "IU",
+        "station_code": "ANMO",
+        "location_code": "10",
+        "channel_code": "B_H_Z",
+        "sample_rate": 40
+      }
+    ],
+    "values": {
+      "frequency_array": [0.0052556, 0.0052556, 0.0052556, {}],
+      "power_array": [-186, -185, -184, -183, {}],
+      "bucket_hits_array": [3, 25, 57, 76, {}]
+    }
+  }
+}
