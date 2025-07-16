@@ -6,7 +6,15 @@
   "url": "https://service.earthscope.org/fdsnws/psd/psd?...",
   "version": "2025-05-22T10:09:00Z",
   "isAccessibleForFree": true,
-  "keywords": ["seismology", "power spectral density", "add other keywords"],
+  "keywords": [
+    {
+      "@type": "DefinedTerm",
+      "name": "seismology",
+      "inDefinedTermSet": "https://apps.usgs.gov/thesaurus/",
+      "url": "https://apps.usgs.gov/thesaurus/term-simple.php?thcode=2&code=1050",
+      "termCode": "thcode=2&code=1050"
+    }
+  ],
   "identifier": ["?"],
   "license": ["https://creativecommons.org/licenses/by/4.0/"]
 }
