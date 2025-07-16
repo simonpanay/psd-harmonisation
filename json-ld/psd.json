@@ -1,5 +1,8 @@
 {
-  "@context": "https://schema.org/",
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "time": "http://www.w3.org/2006/time#"
+  },
   "@type": "Dataset",
   "name": "Power Spectral Density Values",
   "description": "Output values from a standardized FDSN PSD web service",
@@ -26,7 +29,10 @@
     "value": "doi:...",
     "url": "https://doi.org/..."
   },
-  "license": ["https://creativecommons.org/licenses/by/4.0/", "ANother Licence ?"],
+  "license": [
+    "https://spdx.org/licenses/CC-BY-4.0",
+    "https://creativecommons.org/licenses/by/4.0/"
+  ],
   "variableMeasured": [
     {
       "@type": "PropertyValue",
@@ -51,6 +57,19 @@
       "unitCode": "http://qudt.org/vocab/unit/Decib",
       "minValue": "Optionnal",
       "maxValue": "Optionnal"
+    }
+  ],
+  "temporalCoverage": [
+    {
+      "@type": "time:ProperInterval",
+      "time:hasBeginning": {
+        "@type": "time:Instant",
+        "time:inXSDDateTimeStamp": "2022-01-01T00:00:00Z"
+      },
+      "time:hasEnd": {
+        "@type": "time:Instant",
+        "time:inXSDDateTimeStamp": "2022-01-03T00:00:00Z"
+      }
     }
   ],
   "subjectOf": {
