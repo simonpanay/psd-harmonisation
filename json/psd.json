@@ -1,5 +1,5 @@
 {
-  "uri": "https://service.earthscope.org/fdsnws/psd/psd?",
+  "uri": "https://service.earthscope.org/fdsnws/psd/psd?...",
   "requested_start": "2025-01-01T00:00:00Z",
   "requested_end": "2025-01-07T00:00:00Z",
   "analyzed_start": "2025-01-01T00:00:00Z",
