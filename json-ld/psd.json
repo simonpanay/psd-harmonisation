@@ -1,7 +1,8 @@
 {
   "@context": {
     "@vocab": "https://schema.org/",
-    "time": "http://www.w3.org/2006/time#"
+    "time": "http://www.w3.org/2006/time#",
+    "prov": "http://www.w3.org/ns/prov#"
   },
   "@type": "Dataset",
   "name": "Power Spectral Density Values",
@@ -54,7 +55,7 @@
       "identifier": [
         "http://dx.doi.org/10.13039/100000001",
         "https://ror.org/021nxhr62",
-        "include funder ID from crossref funder registry if possible"
+        "https://api.crossref.org/funders/100000001"
       ]
     }
   },
@@ -62,6 +63,8 @@
     "https://spdx.org/licenses/CC-BY-4.0",
     "https://creativecommons.org/licenses/by/4.0/"
   ],
+  "prov:wasDerivedFrom": { "@id": "https://doi.org/10.xxxx/Dataset-1" },
+  "isBasedOn": { "@id": "https://doi.org/10.xxxx/Dataset-1" },
   "variableMeasured": [
     {
       "@type": "PropertyValue",
