@@ -15,6 +15,12 @@
       "termCode": "thcode=2&code=1050"
     }
   ],
-  "identifier": ["?"],
+  "identifier": {
+    "@id": "https://doi.org/...",
+    "@type": "PropertyValue",
+    "propertyID": "https://registry.identifiers.org/registry/doi",
+    "value": "doi:...",
+    "url": "https://doi.org/..."
+  },
   "license": ["https://creativecommons.org/licenses/by/4.0/"]
 }
