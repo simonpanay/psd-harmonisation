@@ -2,7 +2,8 @@
   "@context": {
     "@vocab": "https://schema.org/",
     "time": "http://www.w3.org/2006/time#",
-    "prov": "http://www.w3.org/ns/prov#"
+    "prov": "http://www.w3.org/ns/prov#",
+    "provone": "http://purl.dataone.org/provone/2015/01/15/ontology#"
   },
   "@type": "Dataset",
   "name": "Power Spectral Density Values",
@@ -65,6 +66,12 @@
   ],
   "prov:wasDerivedFrom": { "@id": "https://doi.org/10.xxxx/Dataset-1" },
   "isBasedOn": { "@id": "https://doi.org/10.xxxx/Dataset-1" },
+  "prov:wasGeneratedBy": {
+    "@id": "https://example.org/executions/execution-42 : no idea what to use here",
+    "@type": "provone:Execution",
+    "prov:hadPlan": "https://github.com/EarthScope/mustang",
+    "prov:used": { "@id": "https://doi.org/10.xxxx/Dataset-1" }
+  },
   "variableMeasured": [
     {
       "@type": "PropertyValue",
