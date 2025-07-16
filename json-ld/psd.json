@@ -5,6 +5,10 @@
   "description": "Output values from a standardized FDSN PSD web service",
   "url": "https://service.earthscope.org/fdsnws/psd/psd?...",
   "version": "2025-05-22T10:09:00Z",
+  "includedInDataCatalog": {
+    "@id": "https://service.earthscope.org/fdsnws/psd/",
+    "@type": "DataCatalog"
+  },
   "isAccessibleForFree": true,
   "keywords": [
     {
@@ -27,26 +31,37 @@
     {
       "@type": "PropertyValue",
       "name": "frequency",
-      "propertyID":"http://purl.obolibrary.org/obo/...",
+      "propertyID": "http://purl.obolibrary.org/obo/...",
       "url": "Optionnal : not intended to be machine-actionable",
       "description": "PSD output is in 'frequency'",
       "measurementTechnique": "https://...",
       "unitText": "herz",
-      "unitCode":"http://qudt.org/vocab/unit/HZ",
+      "unitCode": "http://qudt.org/vocab/unit/HZ",
       "minValue": "Optionnal",
       "maxValue": "Optionnal"
     },
     {
       "@type": "PropertyValue",
       "name": "power",
-      "propertyID":"http://purl.obolibrary.org/obo/...",
+      "propertyID": "http://purl.obolibrary.org/obo/...",
       "url": "Optionnal : not intended to be machine-actionable",
       "description": "power ratio formula, e.g., '10log10(m**2/sec**4/Hz)'",
       "measurementTechnique": "https://...",
       "unitText": "decibels",
-      "unitCode":"http://qudt.org/vocab/unit/Decib",
+      "unitCode": "http://qudt.org/vocab/unit/Decib",
       "minValue": "Optionnal",
       "maxValue": "Optionnal"
     }
-  ]
+  ],
+  "subjectOf": {
+    "@type": "DataDownload",
+    "name": "something metadata for dataset",
+    "description": "Not sure we should include this subjectOf section",
+    "encodingFormat": [
+      "application/xml",
+      "https://eml.ecoinformatics.org/eml-2.2.0"
+    ],
+    "contentURL": "https://",
+    "dateModified": "2019-06-12T14:44:15Z"
+  }
 }
