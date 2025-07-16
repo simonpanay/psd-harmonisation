@@ -22,5 +22,31 @@
     "value": "doi:...",
     "url": "https://doi.org/..."
   },
-  "license": ["https://creativecommons.org/licenses/by/4.0/"]
+  "license": ["https://creativecommons.org/licenses/by/4.0/"],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "frequency",
+      "propertyID":"http://purl.obolibrary.org/obo/...",
+      "url": "Optionnal : not intended to be machine-actionable",
+      "description": "PSD output is in 'frequency'",
+      "measurementTechnique": "https://...",
+      "unitText": "herz",
+      "unitCode":"http://qudt.org/vocab/unit/HZ",
+      "minValue": "Optionnal",
+      "maxValue": "Optionnal"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "power",
+      "propertyID":"http://purl.obolibrary.org/obo/...",
+      "url": "Optionnal : not intended to be machine-actionable",
+      "description": "power ratio formula, e.g., '10log10(m**2/sec**4/Hz)'",
+      "measurementTechnique": "https://...",
+      "unitText": "decibels",
+      "unitCode":"http://qudt.org/vocab/unit/Decib",
+      "minValue": "Optionnal",
+      "maxValue": "Optionnal"
+    }
+  ]
 }
