@@ -5,7 +5,6 @@
 
 ## Userfull links : 
 - [Data on the Web Best Practices](https://www.w3.org/TR/dwbp/)
-- [Building JSON-LD APIs: Best Practices](https://json-ld.org/spec/latest/json-ld-api-best-practices/)
 - [Best Practices for Publishing Linked Data](https://www.w3.org/TR/ld-bp/)
 - [JSON-LD Best Practices](https://w3c.github.io/json-ld-bp/)
 
