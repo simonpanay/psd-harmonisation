@@ -5,11 +5,13 @@
     "prov": "http://www.w3.org/ns/prov#",
     "provone": "http://purl.dataone.org/provone/2015/01/15/ontology#"
   },
-  "@type": "Dataset",
-  "name": "Power Spectral Density Values",
+  "@type": ["DataDownload", "WebAPI"],
+  "name": "EarthScope FDSNWS psd Web Service",
+  "serviceType": "FDSNWS psd API",
+  "documentation": "https://service.earthscope.org/fdsnws/psd/docs/",
   "description": "Output values from a standardized FDSN PSD web service",
-  "url": "https://service.earthscope.org/fdsnws/psd/psd?...",
-  "version": "2025-05-22T10:09:00Z",
+  "url": "https://service.earthscope.org/fdsnws/psd/",
+  "version": 1,
   "includedInDataCatalog": {
     "@id": "https://service.earthscope.org/fdsnws/psd/",
     "@type": "DataCatalog"
@@ -111,15 +113,15 @@
     "@type": "SearchAction",
     "target": {
       "@type": "EntryPoint",
-      "contentType": "application/ld+json",
-      "urlTemplate": "https://service.earthscope.org/fdsnws/psd/psd?nslc={nslc}&requested_start={start}&...}",
-      "description": "Download PSDs based start/end dates and nslc's, etc...",
+      "contentType": "application/json",
+      "urlTemplate": "https://service.earthscope.org/fdsnws/psd/1/psd?nslc={nslc}&{starttime}&{endtime}...}",
+      "description": "Download PSDs based on start/end dates and nslc's, etc...",
       "httpMethod": "GET"
     },
     "query-input": [
       {
         "@type": "PropertyValueSpecification",
-        "valueName": "start",
+        "valueName": "starttime",
         "description": "User requested start time as UTC ISO DateTime",
         "valueRequired": true,
         "defaultValue": "2025-05-05T15:55:15Z",
@@ -127,10 +129,10 @@
       },
       {
         "@type": "PropertyValueSpecification",
-        "valueName": "end",
+        "valueName": "endtime",
         "description": "User requested end time as UTC ISO DateTime",
         "valueRequired": true,
-        "defaultValue": "2025-05-06T15:55:15Z",
+        "defaultValue": "2025-05-05T15:55:15Z",
         "valuePattern": "(-?(?:[1-9][0-9]*)?[0-9]{4})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9])T(2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9])(.[0-9]+)?(Z)?"
       }
     ]
