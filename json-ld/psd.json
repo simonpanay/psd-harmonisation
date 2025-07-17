@@ -103,11 +103,7 @@
       "@type": "time:ProperInterval",
       "time:hasBeginning": {
         "@type": "time:Instant",
-        "time:inXSDDateTimeStamp": "2022-01-01T00:00:00Z"
-      },
-      "time:hasEnd": {
-        "@type": "time:Instant",
-        "time:inXSDDateTimeStamp": "2022-01-03T00:00:00Z"
+        "time:inXSDDateTimeStamp": "1980-01-01T00:00:00Z"
       }
     }
   ],
