@@ -111,14 +111,6 @@
       }
     }
   ],
-  "subjectOf": {
-    "@type": "DataDownload",
-    "name": "something metadata for dataset",
-    "description": "Not sure we should include this subjectOf section. should describe the format of that output format",
-    "encodingFormat": ["application/ld+json", "something else ?"],
-    "contentURL": "https://",
-    "dateModified": "2019-06-12T14:44:15Z"
-  },
   "potentialAction": {
     "@type": "SearchAction",
     "target": {
