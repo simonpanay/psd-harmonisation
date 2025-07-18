@@ -118,6 +118,14 @@
       "description": "Download PSDs based on start/end dates and nslc's, etc...",
       "httpMethod": "GET"
     },
+    "result": {
+      "@type": "DataDownload",
+      "encodingFormat": [
+        "application/json",
+        "application/ld+json"
+      ],
+      "description": "json format for psds"
+    },
     "query-input": [
       {
         "@type": "PropertyValueSpecification",
