@@ -1,5 +1,8 @@
 # psd-harmonisation
 
+## Structure of this repository
+The purpose of `service.json` document is to describes the psd webservice (think of it as an equivalent of `application.wadl` in other fdsn webservices)
+
 ## Guidelines 
 - Science On Schema.Org : https://github.com/ESIPFed/science-on-schema.org/
 
