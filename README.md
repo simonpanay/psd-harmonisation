@@ -7,6 +7,7 @@ The purpose of `service.json` document is to describes the psd webservice (think
 - Science On Schema.Org : https://github.com/ESIPFed/science-on-schema.org/
 
 ## Userfull links : 
+- [Semantic Sensor Network Ontology](https://www.w3.org/TR/vocab-ssn/)
 - [Data on the Web Best Practices](https://www.w3.org/TR/dwbp/)
 - [Best Practices for Publishing Linked Data](https://www.w3.org/TR/ld-bp/)
 - [JSON-LD Best Practices](https://w3c.github.io/json-ld-bp/)
