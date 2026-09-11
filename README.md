@@ -17,4 +17,7 @@ The purpose of `service.json` document is to describes the psd webservice (think
 - PDF Json model proposed : add later
 - PSD Json model proposed : add later
 
+## real world examples :
+- [NCDC Storm Events Database](https://catalog.data.gov/dataset/ncdc-storm-events-database) see "Complete Metadata" for a human readable version of the json-ld
+
 ## [Meeting notes](https://docs.google.com/document/d/1Nu34I5fvnxgim8ciYic2noLijENgwoGUV0Fpvndmk7s/edit?pli=1&tab=t.0)
