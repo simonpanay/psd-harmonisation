@@ -12,6 +12,7 @@ The purpose of `service.json` document is to describes the psd webservice (think
 - [Best Practices for Publishing Linked Data](https://www.w3.org/TR/ld-bp/)
 - [JSON-LD Best Practices](https://w3c.github.io/json-ld-bp/)
 - [Interpreting json as json-ld](https://www.w3.org/TR/json-ld/#interpreting-json-as-json-ld)
+- [jsonapi specification](https://jsonapi.org/)
 
 ## Sources : 
 - PDF Json model proposed : add later
